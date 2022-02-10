@@ -55,7 +55,7 @@ cat <<EOF >/etc/v2ray/config.json
         {
             "listen": "0.0.0.0",
             "port": 443,
-            "protocol": "vmess",
+            "protocol": "vless",
             "settings": {
                 "clients": [
                     {
@@ -63,7 +63,7 @@ cat <<EOF >/etc/v2ray/config.json
                         "alterId": 0
                     }
                 ],
-                "disableInsecureEncryption": true
+                "decryption": "none"
             },
             "streamSettings": {
                 "network": "ws"
